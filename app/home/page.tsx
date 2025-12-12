@@ -1,8 +1,11 @@
+'use client';
+
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  return (
+  return (<>
+  
   <section
   id="home"
   className="min-h-screen flex items-center justify-center px-6 pt-32 
@@ -45,6 +48,30 @@ export default function HeroSection() {
     </motion.div>
   </div>
 </section>
+<div className=" px-6 py-20 text-white bg-black">
+        <div className="w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 ">
+    About Me
+  </h2>
+ <p className="text-lg leading-relaxed ">
+    I’m a frontend developer passionate about crafting clean, modern, and fast 
+    user interfaces using React, Next.js, and TailwindCSS.
+  </p>
 
-  );
+ <p className="text-lg leading-relaxed">
+    I’m always improving, always learning, and always pushing my work to look 
+    better and feel better.
+  </p>
+
+        </div>
+ 
+
+ 
+
+ 
+
+
+</div>
+
+  </>);
 }

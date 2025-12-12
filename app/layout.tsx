@@ -23,13 +23,16 @@ export default function RootLayout({
 }>) {
 return (
   <html lang="en">
-  
-
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+  <head>
+    <title>Omar Samy | Frontend developer</title>
+      
+  </head>
+ <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NavBar />
         {children}
         <Footer />
     </body>
+ 
   </html>
 );
 }
