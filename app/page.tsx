@@ -51,21 +51,27 @@ export default function HeroSection() {
 
 
 
-<div className="max-w-4xl mx-auto px-6 py-20 text-zinc-100">
-        
-  <h2 className="text-3xl font-bold mb-6 text-white">
+<div className=" px-6 py-20 text-white bg-black">
+        <div className="w-5xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 ">
     About Me
   </h2>
-
-  <p className="text-lg leading-relaxed text-zinc-300">
+ <p className="text-lg leading-relaxed ">
     I’m a frontend developer passionate about crafting clean, modern, and fast 
     user interfaces using React, Next.js, and TailwindCSS.
   </p>
 
-  <p className="text-lg leading-relaxed text-zinc-300 mt-4">
+ <p className="text-lg leading-relaxed">
     I’m always improving, always learning, and always pushing my work to look 
     better and feel better.
   </p>
+
+        </div>
+ 
+
+ 
+
+ 
 
 
 </div>

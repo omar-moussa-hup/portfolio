@@ -12,7 +12,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="py-16 bg-white dark:bg-zinc-950 transition">
+    <section className="py-16 bg-white dark:bg-zinc-950 transition h-screen">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8">
           Skills

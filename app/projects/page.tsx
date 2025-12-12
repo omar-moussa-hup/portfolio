@@ -9,7 +9,6 @@ const projects = [
     description: "Fresh Cart – A responsive e‑commerce web app showcasing grocery products with a shopping cart, clean UI, and smooth navigation for desktop and mobile.",
     demo: "https://fresh-cart-jet-two.vercel.app/",
     github: "https://github.com/omar-moussa-hup/fresh-cart",
-    IMG:''
   },
   {
     title: "Mealify",
@@ -27,7 +26,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-32 px-6 bg-white dark:bg-black">
+    <section id="projects" className="py-32 px-6 text-white bg-black">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

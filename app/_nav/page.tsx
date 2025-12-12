@@ -1,18 +1,11 @@
 'use client';
 import { useState } from "react";
-import { Menu, X, Sun, Moon, Rocket, Github, Linkedin } from "lucide-react";
+import { Menu, X, Rocket, Github, Linkedin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 
-export default function NavbBar() {
+export default function NavBar() {
   const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    document.documentElement.classList.toggle("dark");
-  };
 
   const links = [
     { name: "Home", href: "/" },
@@ -22,7 +15,7 @@ export default function NavbBar() {
   ];
 
   return (
-    <header className=" top-0 left-0 w-full z-50 bg-white/40 dark:bg-black/40 backdrop-blur-xl border-b border-white/20 dark:border-white/10">
+    <header className="top-0 left-0 w-full z-50 bg-black backdrop-blur-xl text-white border-b border-white/20">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
@@ -31,18 +24,10 @@ export default function NavbBar() {
           animate={{ opacity: 1, y: 0 }} 
           className="flex items-center gap-2 cursor-pointer"
         >
-          <Rocket className="text-blue-600 dark:text-blue-400" />
+          <Rocket className="text-blue-400" />
           <span className="text-2xl font-extrabold">
-            <Link href="/">
-            
-                        Omar.
-    
-            
-            </Link>
-            
-            
-            
-            </span>
+            <Link href="/">Omar.</Link>
+          </span>
         </motion.div>
 
         <ul className="hidden md:flex items-center gap-10 text-lg font-medium">
@@ -52,25 +37,21 @@ export default function NavbBar() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-
-            <Link href={link.href} className="hover:text-blue-500">
-              {link.name}
-            </Link>
+              <Link href={link.href} className="hover:text-blue-500">
+                {link.name}
+              </Link>
             </motion.li>
           ))}
         </ul>
 
         {/* Social Icons */}
         <div className="hidden md:flex items-center gap-5">
-          <a href="https://github.com/omar-moussa-hup" target="_blank" className="hover:scale-110 transition-transform">
+          <a href="https://github.com/omar-moussa-hup" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
             <Github />
           </a>
-          <a href="https://www.linkedin.com/in/engomarsamy1?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" className="hover:scale-110 transition-transform">
+          <a href="https://www.linkedin.com/in/engomarsamy1" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
             <Linkedin />
           </a>
-
-          {/* Theme Toggle */}
-  
         </div>
 
         {/* Mobile Toggle */}
@@ -86,29 +67,21 @@ export default function NavbBar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-black px-6 py-8 space-y-6 border-t border-white/20 dark:border-white/10"
+            className="md:hidden bg-black px-6 py-8 space-y-6 border-t border-white/20"
           >
             {links.map((link, i) => (
-              
               <Link href={link.href} key={i} onClick={() => setOpen(false)} className="block text-xl font-semibold hover:text-blue-500">
-
-              {link.name}
-
-
+                {link.name}
               </Link>
-              
-              
-              
-       
             ))}
-
-            {/* Mobile Theme Toggle */}
-        
-
             {/* Mobile Socials */}
             <div className="flex gap-6 pt-4">
-              <Github className="cursor-pointer" />
-              <Linkedin className="cursor-pointer" />
+              <a href="https://github.com/omar-moussa-hup" target="_blank" rel="noopener noreferrer">
+                <Github />
+              </a>
+              <a href="https://www.linkedin.com/in/engomarsamy1" target="_blank" rel="noopener noreferrer">
+                <Linkedin />
+              </a>
             </div>
           </motion.div>
         )}
