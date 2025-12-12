@@ -2,22 +2,24 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 
+
 const projects = [
   {
     title: "E-Commerce UI",
-    description: "Modern responsive shop interface built with React, Tailwind, and context state.",
+    description: "Fresh Cart – A responsive e‑commerce web app showcasing grocery products with a shopping cart, clean UI, and smooth navigation for desktop and mobile.",
     demo: "https://fresh-cart-jet-two.vercel.app/",
     github: "https://github.com/omar-moussa-hup/fresh-cart",
+    IMG:''
   },
   {
     title: "Mealify",
-    description: "Personal portfolio with smooth animations, dark mode, and clean UI.",
+    description: "Mealify‑Pied – A responsive web app showcasing meals, chefs, and gallery content, featuring a clean modern UI, smooth navigation, and optimized layout for desktop and mobile",
     demo: "https://mealify-pied.vercel.app/",
     github: "https://github.com/omar-moussa-hup/Mealify",
   },
   {
     title: "free game hub",
-    description: "Analytics dashboard with charts, filters, and dynamic data rendering.",
+    description: "Free Games Platform – A responsive web app showcasing free online games with category filtering, dynamic data loading, and optimized performance using modern React best practices.",
     demo: "https://free-games-snowy.vercel.app/",
     github: "https://github.com/omar-moussa-hup/free-games",
   },

@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="flex items-center justify-center gap-6 mb-16">
           
           <a
-            href="mailto:youremail@gmail.com"
+            href="mailto:omarmoussaa152@gmail.com"
             className="p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900 
                        text-zinc-900 dark:text-zinc-100 
                        border border-zinc-200 dark:border-zinc-800 
@@ -30,7 +30,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="\https://github.com/omar-moussa-hup\"
+            href="https://github.com/omar-moussa-hup"
             target="_blank\"
             className="p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900 
                        text-zinc-900 dark:text-zinc-100 
@@ -41,7 +41,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com\"
+            href="https://www.linkedin.com/in/engomarsamy1?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
             target="_blank\"
             className="p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900 
                        text-zinc-900 dark:text-zinc-100 
@@ -52,7 +52,6 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* Contact Box */}
         <div className="max-w-md mx-auto p-6 rounded-2xl bg-zinc-100 dark:bg-zinc-900 
                         border border-zinc-200 dark:border-zinc-800 shadow-lg">
           <p className="text-zinc-900 dark:text-zinc-100 font-medium">

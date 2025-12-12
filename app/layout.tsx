@@ -26,22 +26,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <>
-
-<ThemeProvider>
-   <NavBar />
+return (
+  <html lang="en">
+    <head>
+      <title>Omar Moussa | Frontend Developer</title>
+      <meta name="description" content="Frontend Developer specializing in React, Next.js, and modern UI design." />
+    </head>
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <ThemeProvider>
+        <NavBar />
         {children}
-        <Footer /> 
-</ThemeProvider>
-          
-        
-        </>
-      </body>
-    </html>
-  );
+        <Footer />
+      </ThemeProvider>
+    </body>
+  </html>
+);
 }

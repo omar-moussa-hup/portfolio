@@ -17,8 +17,8 @@ export default function NavbBar() {
   const links = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
-    { name: "Skills", href: "/about" },
-    { name: "Contact", href: "/reusme" },
+    { name: "Skills", href: "/skills" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function NavbBar() {
           <span className="text-2xl font-extrabold">
             <Link href="/">
             
-                        Omar.dev
+                        Omar.
     
             
             </Link>
@@ -45,7 +45,6 @@ export default function NavbBar() {
             </span>
         </motion.div>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-10 text-lg font-medium">
           {links.map((link, i) => (
             <motion.li
@@ -71,12 +70,7 @@ export default function NavbBar() {
           </a>
 
           {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-xl border dark:border-white/20 hover:rotate-12 transition-transform"
-          >
-            {theme === "light" ? <Moon /> : <Sun />}
-          </button>
+  
         </div>
 
         {/* Mobile Toggle */}
@@ -92,7 +86,7 @@ export default function NavbBar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-white k px-6 py-8 space-y-6 border-t border-white/20 dark:border-white/10"
+            className="md:hidden bg-black px-6 py-8 space-y-6 border-t border-white/20 dark:border-white/10"
           >
             {links.map((link, i) => (
               
@@ -109,12 +103,7 @@ export default function NavbBar() {
             ))}
 
             {/* Mobile Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="w-full py-2 border rounded-xl dark:border-white/20"
-            >
-              {theme === "light" ? "Dark Mode" : "Light Mode"}
-            </button>
+        
 
             {/* Mobile Socials */}
             <div className="flex gap-6 pt-4">
